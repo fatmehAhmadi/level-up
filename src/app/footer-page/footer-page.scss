@@ -1,16 +1,51 @@
+$primary-color: rgb(89, 94, 255);
+$primary-bg: rgba(89, 95, 255, 0.33);
+
 * {
   // background-color: rgb(24, 26, 45);
   color: gray;
   height: 20vh
 }
 
-.footer-icons {
-  border-radius: 15px;
-  border: 1px solid gray;
+.footer-container {
   background-color: rgb(36, 38, 53);
 }
 
+.footer {
+  background-color: rgba(128, 128, 128, 0.095);
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  border-radius: 15px;
+}
+
+mat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .add-icon {
-  background-color: rgb(143, 120, 255);
+  background-color: $primary-color;
   color: white;
+  height: 58px;
+  width: 58px;
+  border-radius: 50px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected-tab {
+  color: $primary-color;
+
+  mat-icon {
+    color: $primary-color;
+    background-color: $primary-bg;
+  }
+}
+
+.icon-tab {
+  cursor: pointer;
 }

@@ -1,7 +1,24 @@
 Dark-theme {}
 
-* {
+.home-container {
   background-color: rgb(24, 26, 45);
   color: white;
   height: 80vh;
+}
+
+mat-icon {
+  background-color: rgb(55, 61, 112);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.welcome {
+  color: var(--primary-color);
+}
+
+.user-name {
+  font-size: 20px;
 }
