@@ -1,18 +1,22 @@
 Dark-theme {}
 
 .home-container {
-  background-color: rgb(24, 26, 45);
+  background-color: var(--primary-bg);
   color: white;
   height: 80vh;
 }
 
 mat-icon {
-  background-color: rgb(55, 61, 112);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card {
   padding: 20px;
   border-radius: 10px;
+  background-color: var(--primary-cad-bg);
+  border: 1px solid var(--primary-cad-border);
 }
 
 .welcome {
@@ -21,4 +25,31 @@ mat-icon {
 
 .user-name {
   font-size: 20px;
+}
+
+.custom-badge .mat-badge-content {
+  background-color: var(--primary-color);
+  border: 4px solid var(--primary-bg);
+  color: white;
+}
+
+.level-card {
+  color: gray;
+
+  .level-number {
+    color: var(--primary-color);
+    font-size: 40px
+  }
+}
+
+::ng-deep .mdc-linear-progress__bar-inner {
+  border-color: var(--primary-color) !important;
+}
+
+.tasks {
+  .tasks-checkbox {}
+}
+
+::ng-deep .mat-mdc-checkbox .mat-internal-form-field {
+  color: white !important;
 }

@@ -1,17 +1,46 @@
 <div class="home-container">
-  <div class="header grid grid-flow-col justify-items-start space-x-5">
-    <div class="user grid grid-flow-col">
-      <img src="/images/level.jpg" alt="Profile" class="w-12 h-12 rounded-full object-cover">
-
-      <div class="titles">
+  <div class="header grid grid-flow-col grid-cols-6 justify-items-start space-x-1">
+    <div class="user grid grid-flow-col profile-avatar m-5">
+      <span class="custom-badge" matBadge="4" matBadgeColor="warn" matBadgePosition="below after">
+        <img src="/images/level.jpg" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+      </span>
+    </div>
+    <div class="user grid grid-flow-col col-start-2 col-end-6">
+      <div class="titles m-5">
         <div class="welcome">welcome back,hunter</div>
-        <div class="user-name">Fatemeh</div>
+        <div class="user-name">Jinwoo</div>
       </div>
     </div>
     <div class="menu">
-      <div class="icon-tab">
-        <mat-icon fontIcon="menu" class="mb-3"></mat-icon>
+      <div class="icon-tab m-5">
+        <mat-icon fontIcon="menu" class="mb-3 card"></mat-icon>
       </div>
     </div>
+  </div>
+
+  <div class="card m-5">
+    <div class="grid grid-flow-col grid-cols-6 justify-items-center gap-3 mb-4">
+      <div class="level-card card grid grid-flow-row">level <span class="level-number">4</span>
+      </div>
+      <div class="col-start-2 col-end-6">
+        <div class="welcome">HUNTER RANK</div>
+        <div class="user-name">STATUS:AWAKENED</div>
+      </div>
+      <div>D</div>
+    </div>
+    <div>600 XP</div>
+    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+  </div>
+
+  Today's Quests
+  <div class="tasks card m-5">
+    <mat-checkbox class="tasks-checkbox">Read
+
+      <mat-chip-set aria-label="Fish selection">
+        <mat-chip>daily</mat-chip>
+        <mat-chip>20xp</mat-chip>
+        <mat-chip>streak 1</mat-chip>
+      </mat-chip-set>
+    </mat-checkbox>
   </div>
 </div>
